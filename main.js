@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import IndexPage from './js/indexPage'
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <MuiThemeProvider>
+  	<IndexPage/>
+  </MuiThemeProvider>,
   document.querySelector('#root')
 );
