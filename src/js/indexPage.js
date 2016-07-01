@@ -13,22 +13,9 @@ class IndexPage extends React.Component {
 
 	render() {
 		return (
-			<AppBar
-			    title="Title"
-			    iconElementRight={
-			      <IconMenu
-			        iconButtonElement={
-			          <IconButton><MoreVertIcon /></IconButton>
-			        }
-			        targetOrigin={{horizontal: 'right', vertical: 'top'}}
-			        anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-			      >
-			        <MenuItem primaryText="Refresh" />
-			        <MenuItem primaryText="Help" />
-			        <MenuItem primaryText="Sign out" />
-			      </IconMenu>
-			    }
-			  />
+			<div style={{color:'orange', backgroundColor:'gray'}}>
+				<h1>Hello World !</h1>
+			</div>
 		);
 	}
 }
