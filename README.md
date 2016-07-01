@@ -1,10 +1,12 @@
-# webpack
+# react and webpack
 
-## [webpack-handbook](http://zhaoda.net/webpack-handbook/configuration.html)
+## webpack
 
-## [react-and-webpack](http://www.infoq.com/cn/articles/react-and-webpack?utm_source=tuicool)
+### [webpack-handbook](http://zhaoda.net/webpack-handbook/configuration.html)
 
-## webpack.config.js
+### [react-and-webpack](http://www.infoq.com/cn/articles/react-and-webpack?utm_source=tuicool)
+
+### webpack.config.js
 
 ```js
 module.exports= {
@@ -43,7 +45,7 @@ module.exports= {
   	]
 }
 ``` 
-#package.json
+##package.json
 
 -  "dev": "webpack-dev-server --progress --colors --port 8090 --hot --inline"
 
