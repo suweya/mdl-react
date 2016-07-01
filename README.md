@@ -45,8 +45,41 @@ module.exports= {
   	]
 }
 ``` 
-##package.json
+
+## 热替换 
+
+### [react-hot-loader](http://gaearon.github.io/react-hot-loader/getstarted/)
+
+### [React Hot Boilerplate](https://github.com/gaearon/react-hot-boilerplate)
+
+### Note 
+
+- webpack.config.js
+
+```js
+module: {
+	    loaders:[
+	      {
+	        test: /\.js[x]?$/,
+	        include: path.join(__dirname, 'src'),
+	        loaders: ['react-hot', 'babel-loader'] // 是loaders不是loader
+	      },
+	      { test: /\.css$/, loader: 'style-loader!css-loader?modules' },
+	    ]
+  	},
+```
+
+## package.json
 
 -  "dev": "webpack-dev-server --progress --colors --port 8090 --hot --inline"
 
 - babel-loader?presets[]=es2015&presets[]=react
+
+## [babel 入门教程](http://www.ruanyifeng.com/blog/2016/01/babel.html)
+
+## eslint
+
+- `npm install -g eslint`
+- `npm install -g eslint-plugin-react`
+- 'eslint --init'
+- 'eslint src'

@@ -8,14 +8,27 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 class IndexPage extends React.Component {
 
 	constructor(props) {
-	    super(props);
-  	}
+		super(props);
+	}
 
 	render() {
 		return (
-			<div style={{color:'orange', backgroundColor:'gray'}}>
-				<h1>Hello World !</h1>
-			</div>
+			<AppBar
+				title="App"
+				iconElementRight={
+				<IconMenu
+					iconButtonElement={
+						<IconButton><MoreVertIcon /></IconButton>
+					}
+					targetOrigin={{horizontal: 'right', vertical: 'top'}}
+					anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+				>
+					<MenuItem primaryText="Refresh" />
+					<MenuItem primaryText="Help" />
+					<MenuItem primaryText="Sign out" />
+				</IconMenu>
+				}
+			/>
 		);
 	}
 }
